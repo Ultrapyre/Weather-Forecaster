@@ -24,7 +24,7 @@ main{
 }
 
 .search-bar{
-    padding: 30px;
+    padding: 0px 30px;
     flex: 1;
     display: flex;
     align-items: center;
@@ -48,10 +48,17 @@ main{
     font-size: 25px;
 }
 
-#search-button{
+button{
     height: 40px;
     width: 80%;
     border-radius: 10px;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+#search-history{
+    margin-top: 10px;
+    width: 100%
 }
 
 .forecast{
