@@ -95,7 +95,7 @@ function weatherFetch(city){
             forecasts.removeChild(forecasts.firstChild);
         }
 
-        for (i=2;i<data.list.length;i=i+8){
+        for (i=7;i<data.list.length;i=i+8){
             var forecastDay = document.createElement("div");
 
             var forecastDate = document.createElement("h3");
@@ -105,6 +105,7 @@ function weatherFetch(city){
             var forecastHumidity = document.createElement("p");
 
             date = new Date(data.list[i].dt*1000)
+            console.log(date)
             forecastDate.textContent = date.toLocaleDateString("en-US")
             forecastWeatherIcon.src="http://openweathermap.org/img/w/"+ data.list[i].weather[0].icon +".png"
             forecastTemperature.textContent = "Temperature: " + data.list[i].main.temp + "°C";
