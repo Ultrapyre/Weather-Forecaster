@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ceffff;
+    margin: 0;
+}
+
+header{
+    background-color: #003859;
+    text-align: center;
+    width: 100%;
+    color: #65fff7;
+    font-family:'Courier New', Courier, monospace;
+    padding: 10px;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+.search-bar{
+    padding: 30px;
+    border-right: black;
+    flex: 1;
+}
+
+.forecast{
+    flex: 3;
+}
