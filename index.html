@@ -12,26 +12,26 @@
     </header>
     <main>
         <aside class = "search-bar">
-            <h2>Enter a city below:</h2>
-            <input type="text" id="search-input">
-            <button id="search-button">Search</button>
+            <div>
+                <h2>Enter a city below:</h2>
+                <input type="text" id="search-input" placeholder="Enter city name...">
+                <button id="search-button">Search</button>
+            </div>
             <div class = "search-history"></div>
         </aside>
         <section class = "forecast">
             <div id = "forecast-today">
-                <h2>City goes here!</h2>
+                <h2 id = "forecast-city">City goes here!</h2>
                 <p>Temp: </p>
                 <p>Wind: </p>
                 <p>Humidity: </p>
-                <p>UV Index: </p>
             </div>
             <div class = "forecast-nextweek">
-                <h2>Weather in the next 5 days:</h2>
+                <h2>Weather in the next 5 days (Starting from 8 am):</h2>
                 <div id="forecasts"></div>
             </div>
         </section>
     </main>
-    <footer></footer>
     <script type="text/javascript" src="./Assets/script.js"></script>
   </body>
 </html>
